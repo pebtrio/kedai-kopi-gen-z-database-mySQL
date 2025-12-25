@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kedai Kopi Kekinian</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1 class="logo">Kedai Kopi Gen-Z</h1>
+        <nav>
+          <a href="#home" data-section="hero">Home</a>
+          <a href="#menu" data-section="menu">Menu</a>
+          <a href="#kontak" data-section="kontak">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="aktif">
+        <div class="hero-text">
+          <h2>Rasakan Kopi Asli Nusantara</h2>
+          <p>Dari biji pilihan, diseduh dengan cinta untuk semangat harimu.</p>
+          <button id="btn-scroll">Lihat Menu</button>
+        </div>
+      </section>
+
+      <!-- MENU & KERANJANG -->
+      <section id="menu">
+        <h3>Menu Favorit</h3>
+        <!-- 🔍 Kolom Pencarian -->
+        <input
+          type="text"
+          id="search"
+          placeholder="Cari kopi favoritmu..."
+          class="search-input"
+        />
+        <div class="daftar-produk" id="daftar-produk"></div>
+
+        <div class="ringkasan-belanja">
+          <h4>🛒 Keranjang Belanja</h4>
+          <div id="isi-keranjang"></div>
+          <p>
+            <strong>Total: Rp <span id="total">0</span></strong>
+          </p>
+
+          <input type="text" id="voucher" placeholder="Masukkan kode voucher" />
+          <div class="tombol-keranjang">
+            <button id="btn-reset">Reset</button>
+            <button id="btn-checkout">Checkout</button>
+          </div>
+          <div id="hasil-checkout"></div>
+        </div>
+      </section>
+
+      <!-- KONTAK -->
+<section id="kontak" class="content">
+  <h3>Hubungi Kami</h3>
+  <p>📍 Jl. Kopi Hangat No.7, Bandung</p>
+  <p>📞 0812-3456-7890</p>
+  <p>📧 kopikekinian@gmail.com</p>
+
+  <!-- Google Maps Embed -->
+  <div class="maps-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9382341248124!2d107.61912237583009!3d-6.903449667632904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e64c1d5a6e4d%3A0x7cfb79d458c82f93!2sBandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1713430550000!5m2!1sid!2sid"
+      width="100%"
+      height="350"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</section>
+
+
+    <footer>
+      <p>© 2025 Kedai Kopi Kekinian — Cita Rasa Asli Nusantara</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
